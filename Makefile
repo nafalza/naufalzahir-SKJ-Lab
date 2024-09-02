@@ -1,13 +1,9 @@
-all: add_numbers
-
-add_numbers: 
-	g++ -o add_numbers add_numbers.cpp
-
-dump: add_numbers
-	objdump -d add_numbers > add_numbers.asm
-
-clean: 
-	rm -f add_numbers add_numbers.asm
-
-run: add_numbers
-	./add_numbers
+all: equivalent_numbers
+equivalent_numbers:
+	g++ -o equivalent_numbers equivalent_numbers.cpp
+dump: equivalent_numbers
+	objdump -d equivalent_numbers > equivalent_numbers.asm 
+clean:
+	rm -f equivalent_numbers equivalent_numbers.asm
+run: equivalent_numbers
+	./equivalent_numbers
