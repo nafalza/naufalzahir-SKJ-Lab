@@ -1,15 +1,18 @@
 #include <iostream>
 using namespace std;
 
-int main () {
-	int num1 = 5;
-	int num2 = 10;
-	int result;
+int main() {
 
-	int result = num1 * num2;
+    int num1 = 5;
+    int num2 = 10;
+    int result = 0;
 
-	cout << result << endl;
+    result = num1 * num2;
 
-	return 0;
+    cout << "Result: " << result << endl;
+
+    return 0;
 }
+
+
 
